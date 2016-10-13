@@ -7,7 +7,6 @@ const messagesModel = require('./model.js');
 
 exports.getLatest = function (req, res) {
   messagesModel.getLatest(5).then(function (value) {
-    //  TODO:  write more logic for this
     res.json(value);    //  Success!
   }, function (reason) {
     res.send(reason);   //  Error!

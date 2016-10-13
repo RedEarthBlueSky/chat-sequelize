@@ -11,6 +11,7 @@ function appendMsgs (msgsArr) {
     let last = msgsArr.length - 1;
     for (let i = last; i >= 0; i--) {
       let msg = msgsArr[i];
+      console.log(msg);
       let timeStr = new Date(msg.timestamp).toLocaleTimeString();
       let $div = $('<div class="message">');
       $('#messages').append(`
